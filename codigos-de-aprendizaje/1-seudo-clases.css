@@ -1,0 +1,100 @@
+h1{
+    color: aqua;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+/* canvia las propiedades escritas cuando pasamos el maus por encima */
+
+
+h1:hover{
+  color: brown;  
+}
+
+
+
+/* canbia las propiedades escritas al darle click */
+
+
+h1:active{
+    font-size: 50px;
+    background-color: azure;
+    color: blueviolet;
+}
+
+
+/* seleccionando el primer li */
+
+li:first-child{
+    color:brown;
+}
+
+/* seleccionando un hijo x - para selecionar un hijo que no es ni el primero ni el ultimo asemos esto  */
+        /* aqui colocamos el numero del hijo si es el segundo se coloca el numero 2 etc */
+
+li:nth-child(3){                /* 3n de cada 2 elementos el 3ro va a hacer modificado
+                                   2n de cada 1 elemento el 2do va a hacer modificado etc */
+        color: green;
+}
+
+
+/* seleccionando el ultimo li */
+
+li:last-child{
+    color: yellowgreen;
+}
+
+
+li{
+    font-size: 20px;
+}
+div{border: 1px #000 solid;}
+
+/* seleccionando un div en caso de q este vacio */
+
+div:empty{
+    width: 100vw;
+    height: 150px;
+    background-color: #0f0;
+    border: 1px #000 solid;
+}
+
+input{
+    margin: 50px;
+}
+/* checked lo q hace es que chequea si esta chequeado si esta chequeado cambia las propiedades escritas */
+
+input:checked{
+    margin: auto;
+}
+
+/* selecionando enlaces no visitados*/
+
+.not-visitado:link{
+    
+    color: rgb(255, 0, 0);
+}
+
+/* selecionando enlaces visitados*/
+
+.visited:visited{
+    color: #0f0;
+}
+
+/* input no valido */
+
+.gmail:invalid{
+    color: red;
+}
+
+/* input valido */
+
+.gmail:valid{
+    color: #0f0;
+}
+
+/* is agrupa todo lo q ceremos modificar q esta dentro de algo */
+
+section:is(li, input){
+    background-color: aquamarine;
+}
